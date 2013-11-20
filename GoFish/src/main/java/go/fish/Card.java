@@ -4,11 +4,14 @@ package go.fish;
  * Created by Taylor on 11/18/13.
  */
 public class Card {
-    private String[] suit = {"Hearts", "Diamonds", "Spades", "Clubs"};
-    private String[] rank = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "Jack", "Queen", "King"};
+    public final String[] suits = {"Hearts", "Diamonds", "Spades", "Clubs"};
+    public final String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
 
-    public Card(String suit, String rank) {
-        this.suit[] = suit;
-        this.rank[] = rank;
+    public String suit;
+    public String rank;
+
+    public Card(int rank, int suit) {
+        this.suit = suits[suit];
+        this.rank = ranks[rank];
     }
 }
